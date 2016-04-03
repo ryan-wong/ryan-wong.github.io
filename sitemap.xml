@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ryan-wong.github.io/2016/01/03/good-gulp-task/</loc>
+    
+    <lastmod>2016-04-03T18:59:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ryan-wong.github.io/2016/03/03/angular-file-structure/</loc>
     
     <lastmod>2016-04-03T18:45:53.000Z</lastmod>
@@ -100,14 +107,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll-calendar/</loc>
-    
-    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ryan-wong.github.io/2015/06/30/custom-cordova-plugin/</loc>
+    <loc>http://ryan-wong.github.io/2015/04/15/javascript-calculate-distance/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -135,7 +135,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/15/alias-path-linux/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -149,7 +149,14 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/01/virtual-host-project/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/01/angular-passing-tags/</loc>
+    
+    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll-calendar/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -163,14 +170,14 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/16/how-to-run-npm-without-sudo/</loc>
+    <loc>http://ryan-wong.github.io/2015/04/21/how-to-add-category-tomagento-homepage/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/04/21/how-to-add-category-tomagento-homepage/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/16/how-to-run-npm-without-sudo/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -205,7 +212,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/01/angular-passing-tags/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/05/angular-trim/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -226,7 +233,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/15/alias-path-linux/</loc>
+    <loc>http://ryan-wong.github.io/2015/06/28/backbutton-create-blank-page/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -310,6 +317,13 @@
   </url>
   
   <url>
+    <loc>http://ryan-wong.github.io/2015/06/28/cant-return-value-write-context/</loc>
+    
+    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ryan-wong.github.io/2015/02/15/make-mamp-use-port-80/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
@@ -318,13 +332,6 @@
   
   <url>
     <loc>http://ryan-wong.github.io/2015/05/12/ngCordova-inappbrowserissue/</loc>
-    
-    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ryan-wong.github.io/2015/05/05/angular-trim/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -345,7 +352,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/backbutton-create-blank-page/</loc>
+    <loc>http://ryan-wong.github.io/2015/04/23/center-text-with-image-css/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -359,14 +366,14 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/cant-return-value-write-context/</loc>
+    <loc>http://ryan-wong.github.io/2015/06/28/proper-structure-api/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/proper-structure-api/</loc>
+    <loc>http://ryan-wong.github.io/2015/06/28/cordova-device-not-Found/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -380,7 +387,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/04/23/center-text-with-image-css/</loc>
+    <loc>http://ryan-wong.github.io/2015/06/28/cordova-inappbrowser-error/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -422,14 +429,14 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/cordova-device-not-Found/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/cordova-inappbrowser-error/</loc>
+    <loc>http://ryan-wong.github.io/2015/06/30/custom-cordova-plugin/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -450,7 +457,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/04/15/javascript-calculate-distance/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/01/virtual-host-project/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
