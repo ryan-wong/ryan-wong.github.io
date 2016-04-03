@@ -135,6 +135,13 @@
   </url>
   
   <url>
+    <loc>http://ryan-wong.github.io/2015/03/15/handlebar-loading-dynamic-elements/</loc>
+    
+    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ryan-wong.github.io/2015/06/28/form-post-angular-laravel/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
@@ -143,13 +150,6 @@
   
   <url>
     <loc>http://ryan-wong.github.io/2015/05/01/angular-passing-tags/</loc>
-    
-    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ryan-wong.github.io/2015/03/15/handlebar-loading-dynamic-elements/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -198,13 +198,6 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll/</loc>
-    
-    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ryan-wong.github.io/2015/05/12/ionic-working-with-android/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
@@ -212,7 +205,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/04/15/javascript-calculate-distance-mysql/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll-calendar/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -226,7 +219,14 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/backbutton-create-blank-page/</loc>
+    <loc>http://ryan-wong.github.io/2015/04/15/javascript-calculate-distance-mysql/</loc>
+    
+    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ryan-wong.github.io/2015/05/05/angular-trim/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -282,14 +282,14 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/laravel-cronjob/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/16/laravel-boilerplate/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/cant-return-value-write-context/</loc>
+    <loc>http://ryan-wong.github.io/2015/06/28/laravel-cronjob/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -304,6 +304,13 @@
   
   <url>
     <loc>http://ryan-wong.github.io/2015/02/15/make-mamp-use-port-80/</loc>
+    
+    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ryan-wong.github.io/2015/06/28/cant-return-value-write-context/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -331,7 +338,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/cordova-device-not-Found/</loc>
+    <loc>http://ryan-wong.github.io/2015/06/28/backbutton-create-blank-page/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -345,7 +352,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/05/angular-trim/</loc>
+    <loc>http://ryan-wong.github.io/2015/06/28/cordova-device-not-Found/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -415,7 +422,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll-calendar/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -437,13 +444,6 @@
   
   <url>
     <loc>http://ryan-wong.github.io/2015/05/01/virtual-host-project/</loc>
-    
-    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ryan-wong.github.io/2015/05/16/laravel-boilerplate/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
