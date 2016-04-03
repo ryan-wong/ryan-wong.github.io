@@ -68,6 +68,321 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-jquery-select-name-array-id" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/21/jquery-select-name-array-id/" class="article-date">
+  <time datetime="2015-04-21T14:55:24.000Z" itemprop="datePublished">2015-04-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/jquery/">jquery</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/21/jquery-select-name-array-id/">Get input name array key in JQuery</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-04-21T14:55:24.000Z" itemprop="datePublished">Apr 21 2015 10:55 am</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>When you want to retrieve the key value in an input element that has a name array you need to do the following:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"tag[1]"</span> <span class="attr">value</span>=<span class="string">"blah"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><br></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tagSelect = [];</span><br><span class="line">$(<span class="string">'input[name^="tag"]'</span>).each(<span class="function"><span class="keyword">function</span>(<span class="params">oneTag</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> oneValue = $(<span class="keyword">this</span>).val();</span><br><span class="line">    <span class="keyword">var</span> name = $(<span class="keyword">this</span>).attr(<span class="string">'name'</span>);</span><br><span class="line">    <span class="keyword">var</span> id = <span class="built_in">parseInt</span>(name.match(<span class="regexp">/[0-9]+/</span>));</span><br><span class="line">    tagSelect.push(id);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Hope it helps you out.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/04/21/jquery-select-name-array-id/" data-id="cimkzis3x0037sd5g943smmok" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/04/21/jquery-select-name-array-id/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/id/">id</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery/">jquery</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-jquery-devbridge-not-work-with-jqueryui" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/17/jquery-devbridge-not-work-with-jqueryui/" class="article-date">
+  <time datetime="2015-04-17T16:45:29.000Z" itemprop="datePublished">2015-04-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/jquery/">jquery</a>►<a class="article-category-link" href="/categories/jquery/autocomplete/">autocomplete</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/17/jquery-devbridge-not-work-with-jqueryui/">devbridge/jQuery-Autocomplete clashes with jquery-ui autocomplete when used together</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-04-17T16:45:29.000Z" itemprop="datePublished">Apr 17 2015 12:45 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I first started using the <a href="https://github.com/devbridge/jQuery-Autocomplete" target="_blank" rel="external">devbridge autocomplete</a> since it look pretty good and then I needed a tagging plugin called <a href="http://tagedit.webwork-albrecht.de/" target="_blank" rel="external">tagedit</a>.</p>
+<p>What I found was that tagedit was using jquery-ui autocomplete and it would not work at all when devbridgeautocomplete was called above.</p>
+<p>I tried to alias it like other people said but it didn’t help.</p>
+<p>So in the end I removed devbridge autocomplete and used jquery-ui autocomplete</p>
+<p>Hope it helps</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/04/17/jquery-devbridge-not-work-with-jqueryui/" data-id="cimkzis3v0033sd5gqkwfd6hi" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/04/17/jquery-devbridge-not-work-with-jqueryui/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/autocomplete/">autocomplete</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery/">jquery</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-javascript-calculate-distance-mysql" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/15/javascript-calculate-distance-mysql/" class="article-date">
+  <time datetime="2015-04-16T01:25:24.000Z" itemprop="datePublished">2015-04-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/mysql/">mysql</a>►<a class="article-category-link" href="/categories/mysql/distance/">distance</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/15/javascript-calculate-distance-mysql/">Calculate distance between two gps location using mysql</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-04-16T01:25:24.000Z" itemprop="datePublished">Apr 15 2015 9:25 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>When you need to calculate the distance between 2 gps cordinates(latitude, longitude) you can use this mysql query.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&apos;SELECT (((acos(sin((&apos; + latitude +</span><br><span class="line">&apos;*pi()/180)) *  sin((`latitude`*pi()/180))+cos((&apos; + latitude +</span><br><span class="line">&apos;*pi()/180)) *  cos((`latitude`*pi()/180))&apos; +</span><br><span class="line">&apos;* cos(((&apos; + longitude + &apos;- `longitude`)* pi()/180))))*180/pi())*60*1.1515* 1.609344) as distance &apos; +</span><br><span class="line">&apos;FROM  table WHERE 1 ORDER BY distance ASC</span><br></pre></td></tr></table></figure>
+<p>You can add a having statement or distance conditional to filter out rows.<br>Hope this helps.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/04/15/javascript-calculate-distance-mysql/" data-id="cimkzis3k002qsd5gu1fr11g2" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/04/15/javascript-calculate-distance-mysql/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/distance/">distance</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gps/">gps</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/latitude/">latitude</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/longitude/">longitude</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-javascript-fixhour" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/15/javascript-fixhour/" class="article-date">
+  <time datetime="2015-04-15T23:52:22.000Z" itemprop="datePublished">2015-04-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/javascript/">javascript</a>►<a class="article-category-link" href="/categories/javascript/hour/">hour</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/15/javascript-fixhour/">Format hour to 12 hour clock in javascript</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-04-15T23:52:22.000Z" itemprop="datePublished">Apr 15 2015 7:52 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> This snippet will help you format a 24 hour time to a 12 hour time.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fixHour</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line"> <span class="keyword">var</span> t=<span class="string">" AM"</span>;</span><br><span class="line"> <span class="keyword">if</span>(e&gt;=<span class="number">12</span>&amp;&amp;e&lt;<span class="number">24</span>)&#123;</span><br><span class="line">  t=<span class="string">" PM"</span>;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="keyword">return</span>(e+<span class="number">11</span>)%<span class="number">12</span>+<span class="number">1</span>+t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Hope it helps.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/04/15/javascript-fixhour/" data-id="cimkzis3o002wsd5gytlm2aih" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/04/15/javascript-fixhour/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/date/">date</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hour/">hour</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-javascript-calculate-distance" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/15/javascript-calculate-distance/" class="article-date">
+  <time datetime="2015-04-15T23:25:24.000Z" itemprop="datePublished">2015-04-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/javascript/">javascript</a>►<a class="article-category-link" href="/categories/javascript/distance/">distance</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/15/javascript-calculate-distance/">Calculate distance between two gps location using javascript</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-04-15T23:25:24.000Z" itemprop="datePublished">Apr 15 2015 7:25 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>When you need to calculate the distance between 2 gps cordinates(latitude, longitude) you can use this function.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">distanceGPS</span> (<span class="params">lat1, lon1, lat2, lon2</span>) </span>&#123;</span><br><span class="line"> <span class="keyword">var</span> radlat1 = <span class="built_in">Math</span>.PI * lat1 / <span class="number">180</span>;</span><br><span class="line"> <span class="keyword">var</span> radlat2 = <span class="built_in">Math</span>.PI * lat2 / <span class="number">180</span>;</span><br><span class="line"> <span class="keyword">var</span> radlon1 = <span class="built_in">Math</span>.PI * lon1 / <span class="number">180</span>;</span><br><span class="line"> <span class="keyword">var</span> radlon2 = <span class="built_in">Math</span>.PI * lon2 / <span class="number">180</span>;</span><br><span class="line"> <span class="keyword">var</span> theta = lon1 - lon2;</span><br><span class="line"> <span class="keyword">var</span> radtheta = <span class="built_in">Math</span>.PI * theta / <span class="number">180</span>;</span><br><span class="line"> <span class="keyword">var</span> dist = <span class="built_in">Math</span>.sin(radlat1) * <span class="built_in">Math</span>.sin(radlat2) +</span><br><span class="line"> <span class="built_in">Math</span>.cos(radlat1) * <span class="built_in">Math</span>.cos(radlat2) * <span class="built_in">Math</span>.cos(radtheta);</span><br><span class="line"> dist = <span class="built_in">Math</span>.acos(dist);</span><br><span class="line"> dist = dist * <span class="number">180</span> / <span class="built_in">Math</span>.PI;</span><br><span class="line"> dist = dist * <span class="number">60</span> * <span class="number">1.1515</span>;</span><br><span class="line"> dist = dist * <span class="number">1.609344</span>;</span><br><span class="line"> <span class="keyword">return</span> dist.toFixed(<span class="number">3</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>There are many variation of this function on the internet but mine returns the answer in kilometers.</p>
+<p>Next post I’ll show how to calculate the distance between GPS in the back end.</p>
+<p>Hope this helps.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/04/15/javascript-calculate-distance/" data-id="cimkzis3l002tsd5gtiatrp1a" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/04/15/javascript-calculate-distance/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/distance/">distance</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gps/">gps</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/latitude/">latitude</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/longitude/">longitude</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-how-to-setup-jwt-authentication-laravel" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/15/how-to-setup-jwt-authentication-laravel/" class="article-date">
+  <time datetime="2015-04-15T18:04:39.000Z" itemprop="datePublished">2015-04-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/authentication/">authentication</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/15/how-to-setup-jwt-authentication-laravel/">How to setup jwt authentication laravel 4</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-04-15T18:04:39.000Z" itemprop="datePublished">Apr 15 2015 2:04 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>When trying to authenticate mobile application with laravel back end server, you cannot use the default session you would use in php. The common practice for authenticating is using json web tokens.</p>
+<p>##Steps:<br>1.Depending on which version of laravel you are using install the correct plugin for laravel cors with composer.<br>I’m using laravel 4 so I used:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer require barryvdh/laravel-cors:0.2.x</span><br></pre></td></tr></table></figure></p>
+<p>2.Next I created the config file with<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php artisan config:publish barryvdh/laravel-cors</span><br></pre></td></tr></table></figure></p>
+<p>3.Next I modified the config file in app/config/packages/barryvdh/laravel-cors/config.php<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'defaults'</span> =&gt; <span class="keyword">array</span>(</span><br><span class="line">    <span class="string">'supportsCredentials'</span> =&gt; <span class="keyword">false</span>,</span><br><span class="line">    <span class="string">'allowedOrigins'</span> =&gt; <span class="keyword">array</span>(),</span><br><span class="line">    <span class="string">'allowedHeaders'</span> =&gt; <span class="keyword">array</span>(),</span><br><span class="line">    <span class="string">'allowedMethods'</span> =&gt; <span class="keyword">array</span>(),</span><br><span class="line">    <span class="string">'exposedHeaders'</span> =&gt; <span class="keyword">array</span>(),</span><br><span class="line">    <span class="string">'maxAge'</span> =&gt; <span class="number">0</span>,</span><br><span class="line">    <span class="string">'hosts'</span> =&gt; <span class="keyword">array</span>(),</span><br><span class="line">),</span><br><span class="line"></span><br><span class="line"><span class="string">'paths'</span> =&gt; <span class="keyword">array</span>(</span><br><span class="line">    <span class="string">'api/v1/*'</span> =&gt; <span class="keyword">array</span>(</span><br><span class="line">        <span class="string">'allowedOrigins'</span> =&gt; <span class="keyword">array</span>(<span class="string">'*'</span>),</span><br><span class="line">        <span class="string">'allowedHeaders'</span> =&gt; <span class="keyword">array</span>(<span class="string">'*'</span>),</span><br><span class="line">        <span class="string">'allowedMethods'</span> =&gt; <span class="keyword">array</span>(<span class="string">'*'</span>),</span><br><span class="line">        <span class="string">'maxAge'</span> =&gt; <span class="number">3600</span>,</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></figure></p>
+<p>You can use whatever route you want, I just used /api/v1.</p>
+<p>4.Next install jwt plugin. Depending on your version of laravel, install a different version of the plugin with composer.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer require tymon/jwt-auth:0.4.*</span><br></pre></td></tr></table></figure></p>
+<p>5.Next I created the config file with<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php artisan config:publish tymon/jwt-auth</span><br></pre></td></tr></table></figure></p>
+<p>You can change the jwt settings here if you want.</p>
+<p>6.Next you will create a filter to check for jwt token before processing a route. I put the filter in my route.php file.<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Route::filter(<span class="string">'authMobile'</span>, <span class="function"><span class="keyword">function</span><span class="params">($route, $request)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">try</span>&#123;</span><br><span class="line">       $token = JWTAuth::getToken();</span><br><span class="line">       $user = JWTAuth::toUser($token);</span><br><span class="line">       $tokenStr = JWTAuth::getToken()-&gt;__toString();</span><br><span class="line">       <span class="keyword">if</span> ($user-&gt;loginToken != $tokenStr)&#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="keyword">Exception</span>(<span class="string">"Login Token don't match"</span>);</span><br><span class="line">       &#125;</span><br><span class="line">       Session::put(<span class="string">'user'</span>,$user-&gt;id);</span><br><span class="line">    &#125;<span class="keyword">catch</span>(<span class="keyword">Exception</span> $e)&#123;</span><br><span class="line">        <span class="keyword">return</span> Response::json(<span class="keyword">array</span>(</span><br><span class="line">            <span class="string">'error'</span> =&gt; <span class="keyword">true</span>,</span><br><span class="line">            <span class="string">'message'</span> =&gt; <span class="string">'Invalid Session'</span></span><br><span class="line">        ));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>7.So an example route will look like the following:<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Route::get(<span class="string">'/api/v1/user'</span>, <span class="keyword">array</span>(</span><br><span class="line"> <span class="string">'before'</span> =&gt; <span class="string">'authMobile'</span>,</span><br><span class="line"> <span class="string">'uses'</span> =&gt;<span class="string">'UsersController@getUserProfile'</span></span><br><span class="line">));</span><br></pre></td></tr></table></figure></p>
+<p>To access the user in the action, you can retrieve it from the session.</p>
+<ol>
+<li>When creating the login, you would return the following JSON to the mobile app.<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//validation happens jere</span></span><br><span class="line">$row = User::find(Auth::user()-&gt;id);</span><br><span class="line">$token = JWTAuth::fromUser($row);</span><br><span class="line"></span><br><span class="line">DB::table(<span class="string">'users'</span>)-&gt;where(<span class="string">'id'</span>, <span class="string">'='</span>,$row-&gt;id )-&gt;update(<span class="keyword">array</span>(</span><br><span class="line">    <span class="string">'last_login'</span> =&gt; date(<span class="string">"Y-m-d H:i:s"</span>),</span><br><span class="line">    <span class="string">'loginToken'</span> =&gt; $token</span><br><span class="line">));</span><br><span class="line"><span class="keyword">return</span> Response::json(<span class="keyword">array</span>(</span><br><span class="line">    <span class="string">'token'</span> =&gt; $token</span><br><span class="line">));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>9.Now everytime the mobile app makes a request to the server, they must add a header<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Authorization bearer Y2E1YTc2MmFkMWU4NjJmZTBiZDU1NmEzMmJhZjBmYjc3MmNkYzBiYjE3YWM5MTkxNDg2Zg...</span><br></pre></td></tr></table></figure></p>
+<p>10.Make sure your .htaccess file allows HTTP authorization.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;IfModule mod_rewrite.c&gt;</span><br><span class="line">    &lt;IfModule mod_negotiation.c&gt;</span><br><span class="line">        Options -MultiViews</span><br><span class="line">    &lt;/IfModule&gt;</span><br><span class="line"></span><br><span class="line">    RewriteEngine On</span><br><span class="line"></span><br><span class="line">    RewriteCond %&#123;HTTP:Authorization&#125; .</span><br><span class="line">    RewriteRule .* - [E=HTTP_AUTHORIZATION:%&#123;HTTP:Authorization&#125;]</span><br><span class="line">    <span class="comment"># Redirect Trailing Slashes...</span></span><br><span class="line">    RewriteRule ^(.*)/$ /<span class="variable">$1</span> [L,R=301]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Handle Front Controller...</span></span><br><span class="line">    RewriteCond %&#123;REQUEST_FILENAME&#125; !<span class="_">-d</span></span><br><span class="line">    RewriteCond %&#123;REQUEST_FILENAME&#125; !<span class="_">-f</span></span><br><span class="line">    RewriteRule ^ index.php [L]</span><br><span class="line">&lt;/IfModule&gt;</span><br></pre></td></tr></table></figure></p>
+<p>Hope this helps you out.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/04/15/how-to-setup-jwt-authentication-laravel/" data-id="cimkzis2v0028sd5g28q75xfp" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/04/15/how-to-setup-jwt-authentication-laravel/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/authentication/">authentication</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jwt/">jwt</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/laravel/">laravel</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-image-uploader-tinymce-4" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/04/15/image-uploader-tinymce-4/" class="article-date">
@@ -157,7 +472,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ryan-wong.github.io/2015/04/15/image-uploader-tinymce-4/" data-id="cimkxn9es00251o5gwn64rwmi" class="article-share-link">Share</a>
+      <a data-url="http://ryan-wong.github.io/2015/04/15/image-uploader-tinymce-4/" data-id="cimkzis30002esd5gk5b2luyg" class="article-share-link">Share</a>
       
         <a href="http://ryan-wong.github.io/2015/04/15/image-uploader-tinymce-4/" class="article-comment-link">Comments</a>
       
@@ -223,7 +538,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ryan-wong.github.io/2015/03/15/handlebar-loading-dynamic-elements/" data-id="cimkxn9e4001n1o5g4lbx7jda" class="article-share-link">Share</a>
+      <a data-url="http://ryan-wong.github.io/2015/03/15/handlebar-loading-dynamic-elements/" data-id="cimkzis2o001xsd5g5mxqb85n" class="article-share-link">Share</a>
       
         <a href="http://ryan-wong.github.io/2015/03/15/handlebar-loading-dynamic-elements/" class="article-comment-link">Comments</a>
       
@@ -271,7 +586,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ryan-wong.github.io/2015/03/15/jquery-click-event-dynamic-element/" data-id="cimkxn9ff002v1o5g2v7drtzj" class="article-share-link">Share</a>
+      <a data-url="http://ryan-wong.github.io/2015/03/15/jquery-click-event-dynamic-element/" data-id="cimkzis3q0030sd5g08mcr78j" class="article-share-link">Share</a>
       
         <a href="http://ryan-wong.github.io/2015/03/15/jquery-click-event-dynamic-element/" class="article-comment-link">Comments</a>
       
@@ -321,7 +636,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ryan-wong.github.io/2015/03/15/jquery-select/" data-id="cimkxn9fk00341o5g7h9q10aw" class="article-share-link">Share</a>
+      <a data-url="http://ryan-wong.github.io/2015/03/15/jquery-select/" data-id="cimkzis3z003asd5ggqx0ze46" class="article-share-link">Share</a>
       
         <a href="http://ryan-wong.github.io/2015/03/15/jquery-select/" class="article-comment-link">Comments</a>
       
@@ -336,115 +651,9 @@
 
 
   
-    <article id="post-jquery-checkbox-checked" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/12/jquery-checkbox-checked/" class="article-date">
-  <time datetime="2015-03-12T23:29:49.000Z" itemprop="datePublished">2015-03-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/jquery/">jquery</a>►<a class="article-category-link" href="/categories/jquery/checkbox/">checkbox</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/12/jquery-checkbox-checked/">Targeting Checkbox/Radio that has been checked with JQuery</a>
-    </h1>
-  
-
-        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-03-12T23:29:49.000Z" itemprop="datePublished">Mar 12 2015 7:29 pm</time></div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I always forget how to target check box that has been checked when I need it most.</p>
-<p>So I decided to make a blog post so I can get the answer really fast.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//find out selected value</span></span><br><span class="line"><span class="keyword">var</span> isChecked = $(<span class="string">'#tag'</span>).is(<span class="string">':checked'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//get value</span></span><br><span class="line"><span class="keyword">var</span> getCheckedValue = $(<span class="string">'#tag2:checked'</span>).val();</span><br><span class="line"></span><br><span class="line"><span class="comment">//target radio directly</span></span><br><span class="line"><span class="keyword">var</span> getRadioValue = $(<span class="string">'#tag2 input[type="radio"][name="blah[]"]:checked'</span>).val();</span><br></pre></td></tr></table></figure>
-<p>Hope it helps.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ryan-wong.github.io/2015/03/12/jquery-checkbox-checked/" data-id="cimkxn9fd002r1o5gl9inw1bp" class="article-share-link">Share</a>
-      
-        <a href="http://ryan-wong.github.io/2015/03/12/jquery-checkbox-checked/" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/checkbox/">checkbox</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery/">jquery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/radio/">radio</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-make-mamp-use-port-80" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/02/15/make-mamp-use-port-80/" class="article-date">
-  <time datetime="2015-02-15T18:00:00.000Z" itemprop="datePublished">2015-02-15</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/mamp/">mamp</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/02/15/make-mamp-use-port-80/">Make MAMP version 3 use Port 80 on Mac OS</a>
-    </h1>
-  
-
-        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-02-15T18:00:00.000Z" itemprop="datePublished">Feb 15 2015 1:00 pm</time></div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><cite>Author: Ryan Wong</cite></p>
-<p>The Reason why MAMP won’t let you set apache or nginx on port 80 is because MAC OS already has apache installed and running on port 80.</p>
-<p>So basically you have to turn it off and then set MAMP to port 80.</p>
-<p>Heres what I did:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo defaults write /System/Library/LaunchDaemons/org.apache.httpd Disabled -bool <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p>This will stop apache from running. Now restart your computer.</p>
-<p>If you type <a href="http://localhost" target="_blank" rel="external">http://localhost</a> in the browser and you don’t see a working page, then that means apache is down.</p>
-<p>Next Set the Port for Apache to 80, Nginx to 81 and Mysql to 3306. Apache and nginx cannot be running on the same port.</p>
-<p>Start MAMP afterwards.</p>
-<p>Hope this helps you out.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ryan-wong.github.io/2015/02/15/make-mamp-use-port-80/" data-id="cimkxn9g1003r1o5g5mx70c16" class="article-share-link">Share</a>
-      
-        <a href="http://ryan-wong.github.io/2015/02/15/make-mamp-use-port-80/" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/apache/">apache</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mamp/">mamp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/port/">port</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/6/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span>
+      <a class="extend prev" rel="prev" href="/page/6/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/8/">Next &raquo;</a>
     </nav>
   
 </section>
@@ -455,7 +664,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/">angular</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/csrf/">csrf</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/directive/">directive</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/directive/html/">html</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/">filter</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/escape-html/">escape html</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/time-ago/">time ago</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/trim/">trim</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/form/">form</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/graph/">graph</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/ng-repeat/">ng-repeat</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/publish/">publish</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/publish/subscribe/">subscribe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/select/">select</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/stripe/">stripe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/authentication/">authentication</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/css/">css</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/css/image/">image</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/express/">express</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/express/api/">api</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/gulp/">gulp</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/handlebars/">handlebars</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/">ionic</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/android/">android</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/carousel/">carousel</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/infinite-scroll/">infinite scroll</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ios/">ios</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ngCordova/">ngCordova</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ngCordova/inappbrowser/">inappbrowser</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/oauth/">oauth</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/oauth/linkedin/">linkedin</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/sqlite/">sqlite</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/distance/">distance</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/hour/">hour</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/">jquery</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/ajax/">ajax</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/autocomplete/">autocomplete</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/checkbox/">checkbox</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/form/">form</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/select/">select</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/lamp/">lamp</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/">laravel</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/push-notification/">push notification</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/stripe/">stripe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/magento/">magento</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/magento/categories/">categories</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mamp/">mamp</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/mamp/virtualhost/">virtualhost</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mobile/">mobile</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mongodb/">mongodb</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/distance/">distance</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/node/">node</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/npm/">npm</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/phonegap/">phonegap</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/">php</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/php/json/">json</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/mysql/">mysql</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/phpunit/">phpunit</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tinymce/">tinymce</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ubuntu/">ubuntu</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ads/">ads</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/">angular</a><span class="category-list-count">16</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/csrf/">csrf</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/directive/">directive</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/directive/html/">html</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/">filter</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/escape-html/">escape html</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/time-ago/">time ago</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/trim/">trim</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/form/">form</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/graph/">graph</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/image/">image</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/ng-repeat/">ng-repeat</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/publish/">publish</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/publish/subscribe/">subscribe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/select/">select</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/stripe/">stripe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/authentication/">authentication</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/css/">css</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/css/image/">image</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/express/">express</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/express/api/">api</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/gulp/">gulp</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/handlebars/">handlebars</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/">ionic</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/android/">android</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/carousel/">carousel</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/infinite-scroll/">infinite scroll</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ios/">ios</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ngCordova/">ngCordova</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ngCordova/inappbrowser/">inappbrowser</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/oauth/">oauth</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/oauth/linkedin/">linkedin</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/sqlite/">sqlite</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/distance/">distance</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/hour/">hour</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/">jquery</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/ajax/">ajax</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/autocomplete/">autocomplete</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/checkbox/">checkbox</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/form/">form</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/select/">select</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/lamp/">lamp</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/">laravel</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/push-notification/">push notification</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/stripe/">stripe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/learning/">learning</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/magento/">magento</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/magento/categories/">categories</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mamp/">mamp</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/mamp/virtualhost/">virtualhost</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mobile/">mobile</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mongodb/">mongodb</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/distance/">distance</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/node/">node</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/node/bots/">bots</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/node/promise/">promise</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/npm/">npm</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/phonegap/">phonegap</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/">php</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/php/json/">json</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/mysql/">mysql</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/phpunit/">phpunit</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tinymce/">tinymce</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ubuntu/">ubuntu</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -464,7 +673,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angular/">angular</a><span class="tag-list-count">19</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angular-js/">angular js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/apache/">apache</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/array/">array</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/authentication/">authentication</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/autocomplete/">autocomplete</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carousel/">carousel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/categories/">categories</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/checkbox/">checkbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova/">cordova</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/csrf/">csrf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/date/">date</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/device/">device</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/directive/">directive</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distance/">distance</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dynamic/">dynamic</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/element/">element</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/escape/">escape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/express/">express</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/filter/">filter</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/form/">form</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gps/">gps</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graph/">graph</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/">gulp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/handlebars/">handlebars</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/header/">header</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hour/">hour</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/id/">id</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image/">image</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inappbrowser/">inappbrowser</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/infinite/">infinite</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/input/">input</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ionic/">ionic</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jquery</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/json/">json</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jwt/">jwt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lamp/">lamp</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/laravel/">laravel</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latitude/">latitude</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linkedin/">linkedin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/longitude/">longitude</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/magento/">magento</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mamp/">mamp</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mcrypt/">mcrypt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ng-repeat/">ng-repeat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ngCordova/">ngCordova</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/phonegap/">phonegap</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/phpunit/">phpunit</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plugin/">plugin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/port/">port</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/post/">post</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/publish/">publish</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/push-notification/">push notification</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/radio/">radio</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scroll/">scroll</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/select/">select</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sqlite/">sqlite</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stripe/">stripe</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/submit/">submit</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/subscribe/">subscribe</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/text/">text</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/time-ago/">time ago</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tinymce/">tinymce</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/trim/">trim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/troubleshoot/">troubleshoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/">ubuntu</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/upload/">upload</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/var/">var</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/version-control/">version control</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/virtualhost/">virtualhost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/www/">www</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/adblock/">adblock</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ads/">ads</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angular/">angular</a><span class="tag-list-count">20</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angular-js/">angular js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/apache/">apache</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/array/">array</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/authentication/">authentication</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/autocomplete/">autocomplete</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bots/">bots</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carousel/">carousel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/categories/">categories</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/checkbox/">checkbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova/">cordova</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/csrf/">csrf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/date/">date</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/device/">device</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/directive/">directive</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distance/">distance</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dynamic/">dynamic</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/element/">element</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/escape/">escape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/express/">express</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/filter/">filter</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/form/">form</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gps/">gps</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graph/">graph</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/">gulp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/handlebars/">handlebars</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/header/">header</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hour/">hour</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/id/">id</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image/">image</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inappbrowser/">inappbrowser</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/infinite/">infinite</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/input/">input</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ionic/">ionic</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jquery</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/json/">json</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jwt/">jwt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lamp/">lamp</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/laravel/">laravel</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latitude/">latitude</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/learning/">learning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linkedin/">linkedin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/longitude/">longitude</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/magento/">magento</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mamp/">mamp</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mcrypt/">mcrypt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ng-repeat/">ng-repeat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ngCordova/">ngCordova</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/phonegap/">phonegap</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/phpunit/">phpunit</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plugin/">plugin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/port/">port</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/post/">post</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/promise/">promise</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/publish/">publish</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/push-notification/">push notification</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/radio/">radio</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scroll/">scroll</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/select/">select</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sqlite/">sqlite</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stripe/">stripe</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/submit/">submit</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/subscribe/">subscribe</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/text/">text</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/time-ago/">time ago</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tinymce/">tinymce</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/trim/">trim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/troubleshoot/">troubleshoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/">ubuntu</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/upload/">upload</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/var/">var</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/version-control/">version control</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/virtualhost/">virtualhost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/www/">www</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -473,7 +682,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/angular/" style="font-size: 20px;">angular</a> <a href="/tags/angular-js/" style="font-size: 10px;">angular js</a> <a href="/tags/apache/" style="font-size: 11.43px;">apache</a> <a href="/tags/api/" style="font-size: 10px;">api</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/authentication/" style="font-size: 10px;">authentication</a> <a href="/tags/autocomplete/" style="font-size: 10px;">autocomplete</a> <a href="/tags/carousel/" style="font-size: 10px;">carousel</a> <a href="/tags/categories/" style="font-size: 10px;">categories</a> <a href="/tags/checkbox/" style="font-size: 10px;">checkbox</a> <a href="/tags/cordova/" style="font-size: 14.29px;">cordova</a> <a href="/tags/csrf/" style="font-size: 10px;">csrf</a> <a href="/tags/css/" style="font-size: 11.43px;">css</a> <a href="/tags/date/" style="font-size: 10px;">date</a> <a href="/tags/device/" style="font-size: 10px;">device</a> <a href="/tags/directive/" style="font-size: 10px;">directive</a> <a href="/tags/distance/" style="font-size: 11.43px;">distance</a> <a href="/tags/dynamic/" style="font-size: 11.43px;">dynamic</a> <a href="/tags/element/" style="font-size: 10px;">element</a> <a href="/tags/escape/" style="font-size: 10px;">escape</a> <a href="/tags/express/" style="font-size: 10px;">express</a> <a href="/tags/filter/" style="font-size: 14.29px;">filter</a> <a href="/tags/form/" style="font-size: 10px;">form</a> <a href="/tags/git/" style="font-size: 11.43px;">git</a> <a href="/tags/gps/" style="font-size: 11.43px;">gps</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/gulp/" style="font-size: 10px;">gulp</a> <a href="/tags/handlebars/" style="font-size: 10px;">handlebars</a> <a href="/tags/header/" style="font-size: 10px;">header</a> <a href="/tags/hour/" style="font-size: 10px;">hour</a> <a href="/tags/html/" style="font-size: 11.43px;">html</a> <a href="/tags/id/" style="font-size: 10px;">id</a> <a href="/tags/image/" style="font-size: 11.43px;">image</a> <a href="/tags/inappbrowser/" style="font-size: 10px;">inappbrowser</a> <a href="/tags/infinite/" style="font-size: 11.43px;">infinite</a> <a href="/tags/input/" style="font-size: 10px;">input</a> <a href="/tags/ionic/" style="font-size: 18.57px;">ionic</a> <a href="/tags/ios/" style="font-size: 14.29px;">ios</a> <a href="/tags/javascript/" style="font-size: 11.43px;">javascript</a> <a href="/tags/jquery/" style="font-size: 15.71px;">jquery</a> <a href="/tags/json/" style="font-size: 10px;">json</a> <a href="/tags/jwt/" style="font-size: 10px;">jwt</a> <a href="/tags/lamp/" style="font-size: 11.43px;">lamp</a> <a href="/tags/laravel/" style="font-size: 17.14px;">laravel</a> <a href="/tags/latitude/" style="font-size: 11.43px;">latitude</a> <a href="/tags/linkedin/" style="font-size: 10px;">linkedin</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/longitude/" style="font-size: 11.43px;">longitude</a> <a href="/tags/magento/" style="font-size: 10px;">magento</a> <a href="/tags/mamp/" style="font-size: 11.43px;">mamp</a> <a href="/tags/mcrypt/" style="font-size: 10px;">mcrypt</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mysql/" style="font-size: 11.43px;">mysql</a> <a href="/tags/ng-repeat/" style="font-size: 10px;">ng-repeat</a> <a href="/tags/ngCordova/" style="font-size: 11.43px;">ngCordova</a> <a href="/tags/node/" style="font-size: 12.86px;">node</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/phonegap/" style="font-size: 12.86px;">phonegap</a> <a href="/tags/php/" style="font-size: 15.71px;">php</a> <a href="/tags/phpunit/" style="font-size: 10px;">phpunit</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/port/" style="font-size: 10px;">port</a> <a href="/tags/post/" style="font-size: 10px;">post</a> <a href="/tags/publish/" style="font-size: 10px;">publish</a> <a href="/tags/push-notification/" style="font-size: 10px;">push notification</a> <a href="/tags/radio/" style="font-size: 10px;">radio</a> <a href="/tags/scroll/" style="font-size: 11.43px;">scroll</a> <a href="/tags/select/" style="font-size: 11.43px;">select</a> <a href="/tags/sqlite/" style="font-size: 10px;">sqlite</a> <a href="/tags/stripe/" style="font-size: 11.43px;">stripe</a> <a href="/tags/submit/" style="font-size: 10px;">submit</a> <a href="/tags/subscribe/" style="font-size: 10px;">subscribe</a> <a href="/tags/text/" style="font-size: 10px;">text</a> <a href="/tags/time-ago/" style="font-size: 10px;">time ago</a> <a href="/tags/tinymce/" style="font-size: 10px;">tinymce</a> <a href="/tags/trim/" style="font-size: 10px;">trim</a> <a href="/tags/troubleshoot/" style="font-size: 10px;">troubleshoot</a> <a href="/tags/ubuntu/" style="font-size: 11.43px;">ubuntu</a> <a href="/tags/upload/" style="font-size: 10px;">upload</a> <a href="/tags/var/" style="font-size: 10px;">var</a> <a href="/tags/version-control/" style="font-size: 10px;">version control</a> <a href="/tags/virtualhost/" style="font-size: 10px;">virtualhost</a> <a href="/tags/www/" style="font-size: 10px;">www</a>
+      <a href="/tags/adblock/" style="font-size: 10px;">adblock</a> <a href="/tags/ads/" style="font-size: 10px;">ads</a> <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/angular/" style="font-size: 20px;">angular</a> <a href="/tags/angular-js/" style="font-size: 10px;">angular js</a> <a href="/tags/apache/" style="font-size: 11.25px;">apache</a> <a href="/tags/api/" style="font-size: 10px;">api</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/authentication/" style="font-size: 10px;">authentication</a> <a href="/tags/autocomplete/" style="font-size: 10px;">autocomplete</a> <a href="/tags/bots/" style="font-size: 10px;">bots</a> <a href="/tags/carousel/" style="font-size: 10px;">carousel</a> <a href="/tags/categories/" style="font-size: 10px;">categories</a> <a href="/tags/checkbox/" style="font-size: 10px;">checkbox</a> <a href="/tags/cordova/" style="font-size: 13.75px;">cordova</a> <a href="/tags/csrf/" style="font-size: 10px;">csrf</a> <a href="/tags/css/" style="font-size: 11.25px;">css</a> <a href="/tags/date/" style="font-size: 10px;">date</a> <a href="/tags/device/" style="font-size: 10px;">device</a> <a href="/tags/directive/" style="font-size: 10px;">directive</a> <a href="/tags/distance/" style="font-size: 11.25px;">distance</a> <a href="/tags/dynamic/" style="font-size: 11.25px;">dynamic</a> <a href="/tags/element/" style="font-size: 10px;">element</a> <a href="/tags/escape/" style="font-size: 10px;">escape</a> <a href="/tags/express/" style="font-size: 11.25px;">express</a> <a href="/tags/filter/" style="font-size: 13.75px;">filter</a> <a href="/tags/form/" style="font-size: 10px;">form</a> <a href="/tags/git/" style="font-size: 11.25px;">git</a> <a href="/tags/gps/" style="font-size: 11.25px;">gps</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/gulp/" style="font-size: 10px;">gulp</a> <a href="/tags/handlebars/" style="font-size: 10px;">handlebars</a> <a href="/tags/header/" style="font-size: 10px;">header</a> <a href="/tags/hour/" style="font-size: 10px;">hour</a> <a href="/tags/html/" style="font-size: 11.25px;">html</a> <a href="/tags/id/" style="font-size: 10px;">id</a> <a href="/tags/image/" style="font-size: 12.5px;">image</a> <a href="/tags/inappbrowser/" style="font-size: 10px;">inappbrowser</a> <a href="/tags/infinite/" style="font-size: 11.25px;">infinite</a> <a href="/tags/input/" style="font-size: 10px;">input</a> <a href="/tags/ionic/" style="font-size: 18.75px;">ionic</a> <a href="/tags/ios/" style="font-size: 13.75px;">ios</a> <a href="/tags/javascript/" style="font-size: 11.25px;">javascript</a> <a href="/tags/jquery/" style="font-size: 16.25px;">jquery</a> <a href="/tags/json/" style="font-size: 10px;">json</a> <a href="/tags/jwt/" style="font-size: 10px;">jwt</a> <a href="/tags/lamp/" style="font-size: 11.25px;">lamp</a> <a href="/tags/laravel/" style="font-size: 17.5px;">laravel</a> <a href="/tags/latitude/" style="font-size: 11.25px;">latitude</a> <a href="/tags/learning/" style="font-size: 10px;">learning</a> <a href="/tags/linkedin/" style="font-size: 10px;">linkedin</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/longitude/" style="font-size: 11.25px;">longitude</a> <a href="/tags/magento/" style="font-size: 10px;">magento</a> <a href="/tags/mamp/" style="font-size: 11.25px;">mamp</a> <a href="/tags/mcrypt/" style="font-size: 10px;">mcrypt</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mysql/" style="font-size: 11.25px;">mysql</a> <a href="/tags/ng-repeat/" style="font-size: 10px;">ng-repeat</a> <a href="/tags/ngCordova/" style="font-size: 11.25px;">ngCordova</a> <a href="/tags/node/" style="font-size: 15px;">node</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/phonegap/" style="font-size: 12.5px;">phonegap</a> <a href="/tags/php/" style="font-size: 16.25px;">php</a> <a href="/tags/phpunit/" style="font-size: 10px;">phpunit</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/port/" style="font-size: 10px;">port</a> <a href="/tags/post/" style="font-size: 10px;">post</a> <a href="/tags/promise/" style="font-size: 10px;">promise</a> <a href="/tags/publish/" style="font-size: 10px;">publish</a> <a href="/tags/push-notification/" style="font-size: 10px;">push notification</a> <a href="/tags/radio/" style="font-size: 10px;">radio</a> <a href="/tags/scroll/" style="font-size: 11.25px;">scroll</a> <a href="/tags/select/" style="font-size: 11.25px;">select</a> <a href="/tags/sqlite/" style="font-size: 10px;">sqlite</a> <a href="/tags/stripe/" style="font-size: 11.25px;">stripe</a> <a href="/tags/submit/" style="font-size: 10px;">submit</a> <a href="/tags/subscribe/" style="font-size: 10px;">subscribe</a> <a href="/tags/text/" style="font-size: 10px;">text</a> <a href="/tags/time-ago/" style="font-size: 10px;">time ago</a> <a href="/tags/tinymce/" style="font-size: 10px;">tinymce</a> <a href="/tags/trim/" style="font-size: 10px;">trim</a> <a href="/tags/troubleshoot/" style="font-size: 10px;">troubleshoot</a> <a href="/tags/ubuntu/" style="font-size: 11.25px;">ubuntu</a> <a href="/tags/upload/" style="font-size: 10px;">upload</a> <a href="/tags/var/" style="font-size: 10px;">var</a> <a href="/tags/version-control/" style="font-size: 10px;">version control</a> <a href="/tags/virtualhost/" style="font-size: 10px;">virtualhost</a> <a href="/tags/www/" style="font-size: 10px;">www</a>
     </div>
   </div>
 
@@ -482,7 +691,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -502,15 +711,15 @@
           </li>
         
           <li>
+            <a href="/2016/02/03/twitter-widget/">twitter-widget</a>
+          </li>
+        
+          <li>
             <a href="/2016/01/03/good-gulp-task/">Useful Gulp Task</a>
           </li>
         
           <li>
-            <a href="/2015/07/10/stripe-get-Subscription-date/">Laravel stripe get subscription date</a>
-          </li>
-        
-          <li>
-            <a href="/2015/07/10/angular-stripe-example/">Angular stripe example</a>
+            <a href="/2015/12/03/learning-to-learn/">learning to learn</a>
           </li>
         
       </ul>
