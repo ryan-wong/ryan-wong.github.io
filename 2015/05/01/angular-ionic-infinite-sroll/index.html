@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="jepvrT6SGHhyn56tvWyqk5vcQYwvcG_emXRaiTE33so" />
+  <link rel="alternate" href="http://ryan-wong.github.io" hreflang="en" />
+  
+  <title>Infinite Scroll in Ionic Framework Pulling Real Data | Ryan Wong Development Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="I’ve looked at lots of tutorials on the internet, and none of they show you a fully functionalinfinite scroll.
+Heres My full Example:
+HTML
+123456789101112131415161718192021&amp;lt;ion-content&amp;gt;&amp;lt;ion-r">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Infinite Scroll in Ionic Framework Pulling Real Data">
+<meta property="og:url" content="http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll/index.html">
+<meta property="og:site_name" content="Ryan Wong Development Blog">
+<meta property="og:description" content="I’ve looked at lots of tutorials on the internet, and none of they show you a fully functionalinfinite scroll.
+Heres My full Example:
+HTML
+123456789101112131415161718192021&amp;lt;ion-content&amp;gt;&amp;lt;ion-r">
+<meta property="og:updated_time" content="2016-04-03T15:29:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Infinite Scroll in Ionic Framework Pulling Real Data">
+<meta name="twitter:description" content="I’ve looked at lots of tutorials on the internet, and none of they show you a fully functionalinfinite scroll.
+Heres My full Example:
+HTML
+123456789101112131415161718192021&amp;lt;ion-content&amp;gt;&amp;lt;ion-r">
+  
+    <link rel="alternative" href="/atom.xml" title="Ryan Wong Development Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Ryan Wong Development Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Technical Topics I have encountered</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://ryan-wong.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-angular-ionic-infinite-sroll" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/05/01/angular-ionic-infinite-sroll/" class="article-date">
+  <time datetime="2015-05-01T22:31:33.000Z" itemprop="datePublished">2015-05-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/ionic/">ionic</a>►<a class="article-category-link" href="/categories/ionic/infinite-scroll/">infinite scroll</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Infinite Scroll in Ionic Framework Pulling Real Data
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-05-01T22:31:33.000Z" itemprop="datePublished">May 1 2015 6:31 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I’ve looked at lots of tutorials on the internet, and none of they show you a fully functional<br>infinite scroll.</p>
+<p>Heres My full Example:</p>
+<p>HTML</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ion-content</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ion-refresher</span></span><br><span class="line">    <span class="attr">pulling-text</span>=<span class="string">"Pull to refresh..."</span></span><br><span class="line">    <span class="attr">on-refresh</span>=<span class="string">"doRefresh()"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ion-refresher</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"listing"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"oneItem in items"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"stat-row"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"username"</span>&gt;</span>&#123;&#123;oneItem.username&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"rank"</span>&gt;</span>&#123;&#123;oneItem.rank | number:0&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ion-infinite-scroll</span>  <span class="attr">ng-if</span>=<span class="string">"!noMoreItemsAvailable"</span></span><br><span class="line">  <span class="attr">on-infinite</span>=<span class="string">"loadMore()"</span> <span class="attr">distance</span>=<span class="string">"10%"</span>&gt;</span><span class="tag">&lt;/<span class="name">ion-infinite-scroll</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"noSourceFound"</span> <span class="attr">ng-if</span>=<span class="string">"noItemFound"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Sorry No Media Found<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ion-content</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>JS Controller</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ListAllCtrl</span>(<span class="params">$s, lS</span>) </span>&#123;</span><br><span class="line">$s.items = [];</span><br><span class="line">$s.page = <span class="number">1</span>;</span><br><span class="line">$s.limit = <span class="number">10</span>;</span><br><span class="line">$s.noMoreItemsAvailable = <span class="literal">false</span>;</span><br><span class="line">$s.noItemFound = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">$s.loadMore = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  lS.getRows($s.page, $s.limit).then(<span class="function"><span class="keyword">function</span>(<span class="params">items</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">if</span> (items.numPages == items.page)&#123;</span><br><span class="line">       $s.noMoreItemsAvailable = <span class="literal">true</span>;</span><br><span class="line">       $s.$broadcast(<span class="string">'scroll.infiniteScrollComplete'</span>);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">if</span> (items.numPages == <span class="number">0</span> || items.total == <span class="number">0</span>)&#123;</span><br><span class="line">       $s.noMoreItemsAvailable = <span class="literal">true</span>;</span><br><span class="line">       $s.noItemFound = <span class="literal">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   $s.page++;</span><br><span class="line">   $s.items = $s.items.concat(items.list);</span><br><span class="line">   $s.$broadcast(<span class="string">'scroll.infiniteScrollComplete'</span>);</span><br><span class="line">     &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"> $s.doRefresh = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">     $s.items = [];</span><br><span class="line">     $s.page = <span class="number">1</span>;</span><br><span class="line">     $s.noMoreItemsAvailable = <span class="literal">false</span>;</span><br><span class="line">     $s.loadMore();</span><br><span class="line">     $s.$broadcast(<span class="string">'scroll.refreshComplete'</span>);</span><br><span class="line"> &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">angular.module(<span class="string">'controllers'</span>,[])</span><br><span class="line">.controller(<span class="string">'ListAllCtrl'</span>, [<span class="string">'$scope'</span>, <span class="string">'listService'</span>, ListAllCtrl]);</span><br></pre></td></tr></table></figure>
+<p>AJAX Request</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> <span class="attr">"page"</span> : <span class="number">1</span>,</span><br><span class="line"> <span class="attr">"numPages"</span>: <span class="number">7</span>,</span><br><span class="line"> <span class="attr">"total"</span>: <span class="number">10</span>,</span><br><span class="line"> <span class="attr">"list"</span> : [&#123;</span><br><span class="line">  <span class="attr">"id"</span> : <span class="number">1</span>,</span><br><span class="line">  <span class="attr">"blah"</span>: <span class="string">"blah"</span></span><br><span class="line"> &#125;,&#123;</span><br><span class="line">  <span class="attr">"id"</span> : <span class="number">1</span>,</span><br><span class="line">  <span class="attr">"blah"</span>: <span class="string">"blah"</span></span><br><span class="line"> &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Angular Service</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">listService</span>(<span class="params">baseUrl, $q, $http</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.someUrl = baseUrl() + <span class="string">'/api/v1/someurl'</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">this</span>.getRows = <span class="function"><span class="keyword">function</span>(<span class="params">page, limit</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> deferred = $q.defer();</span><br><span class="line">    $http(&#123;</span><br><span class="line">      method: <span class="string">'GET'</span>,</span><br><span class="line">      url: someUrl + <span class="string">'?page='</span> + page + <span class="string">'&amp;limit='</span> + limit</span><br><span class="line">    &#125;)</span><br><span class="line">    .success(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> deferred.resolve(data);</span><br><span class="line">    &#125;)</span><br><span class="line">    .error(<span class="function"><span class="keyword">function</span>(<span class="params">err,status</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> deferred.reject(err);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> deferred.promise;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">angular.module(<span class="string">'services'</span>, [])</span><br><span class="line">.service(<span class="string">'listService'</span>, [<span class="string">'baseUrl'</span>, <span class="string">'$q'</span>, <span class="string">'$http'</span>, listService])</span><br></pre></td></tr></table></figure>
+<p>Some Issues I faced when using other methods are:</p>
+<ul>
+<li>double loading row when there is only 1 row</li>
+<li>double loading no results found</li>
+<li>loading uncontrollably</li>
+<li>if loading lots of rows, the last row will appear below your tabs if you have them. The solution is add <code>&lt;br/&gt;</code> to the bottom of <code>&lt;ion-content&gt;</code></li>
+</ul>
+<p>Some features you may consider that aren’t shown here are:</p>
+<ul>
+<li>what to show when you have no internet connection</li>
+<li>what to show when server is down</li>
+</ul>
+<p>Also make sure you add br to the end of ion-content or padding bottom since the scroll view will cut off the last row in the list on your phone. You won’t see this error in your browser but it will happen on your phone.<br>Hope this helps you out</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll/" data-id="cimkvpt000004yt5g9tzkp55j" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/angular/">angular</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/infinite/">infinite</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ionic/">ionic</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/scroll/">scroll</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/05/01/angular-ionic-infinite-sroll-calendar/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Infinite Scroll in Ionic Framework Pulling Real Data By Month
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/05/01/angular-passing-tags/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Passing variables into directives or elements through attributes</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/">angular</a><span class="category-list-count">14</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/csrf/">csrf</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/directive/">directive</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/directive/html/">html</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/">filter</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/escape-html/">escape html</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/time-ago/">time ago</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/trim/">trim</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/form/">form</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/graph/">graph</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/ng-repeat/">ng-repeat</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/publish/">publish</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/publish/subscribe/">subscribe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/select/">select</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/stripe/">stripe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/authentication/">authentication</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/css/">css</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/css/image/">image</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/express/">express</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/express/api/">api</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/handlebars/">handlebars</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/">ionic</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/android/">android</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/carousel/">carousel</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/infinite-scroll/">infinite scroll</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ios/">ios</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ngCordova/">ngCordova</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ngCordova/inappbrowser/">inappbrowser</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/oauth/">oauth</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/oauth/linkedin/">linkedin</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/sqlite/">sqlite</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/distance/">distance</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/hour/">hour</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/">jquery</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/ajax/">ajax</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/autocomplete/">autocomplete</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/checkbox/">checkbox</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/form/">form</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/select/">select</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/lamp/">lamp</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/">laravel</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/push-notification/">push notification</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/stripe/">stripe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/magento/">magento</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/magento/categories/">categories</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mamp/">mamp</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/mamp/virtualhost/">virtualhost</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mobile/">mobile</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mongodb/">mongodb</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/distance/">distance</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/node/">node</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/npm/">npm</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/phonegap/">phonegap</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/">php</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/php/json/">json</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/mysql/">mysql</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/phpunit/">phpunit</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tinymce/">tinymce</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ubuntu/">ubuntu</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angular/">angular</a><span class="tag-list-count">18</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angular-js/">angular js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/apache/">apache</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/array/">array</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/authentication/">authentication</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/autocomplete/">autocomplete</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carousel/">carousel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/categories/">categories</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/checkbox/">checkbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova/">cordova</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/csrf/">csrf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/date/">date</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/device/">device</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/directive/">directive</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distance/">distance</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dynamic/">dynamic</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/element/">element</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/escape/">escape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/express/">express</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/filter/">filter</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/form/">form</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gps/">gps</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graph/">graph</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/handlebars/">handlebars</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/header/">header</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hour/">hour</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/id/">id</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image/">image</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inappbrowser/">inappbrowser</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/infinite/">infinite</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/input/">input</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ionic/">ionic</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jquery</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/json/">json</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jwt/">jwt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lamp/">lamp</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/laravel/">laravel</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latitude/">latitude</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linkedin/">linkedin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/longitude/">longitude</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/magento/">magento</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mamp/">mamp</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mcrypt/">mcrypt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ng-repeat/">ng-repeat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ngCordova/">ngCordova</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/phonegap/">phonegap</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/phpunit/">phpunit</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plugin/">plugin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/port/">port</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/post/">post</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/publish/">publish</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/push-notification/">push notification</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/radio/">radio</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scroll/">scroll</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/select/">select</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sqlite/">sqlite</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stripe/">stripe</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/submit/">submit</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/subscribe/">subscribe</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/text/">text</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/time-ago/">time ago</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tinymce/">tinymce</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/trim/">trim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/troubleshoot/">troubleshoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/">ubuntu</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/upload/">upload</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/var/">var</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/version-control/">version control</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/virtualhost/">virtualhost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/www/">www</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/angular/" style="font-size: 20px;">angular</a> <a href="/tags/angular-js/" style="font-size: 10px;">angular js</a> <a href="/tags/apache/" style="font-size: 11.43px;">apache</a> <a href="/tags/api/" style="font-size: 10px;">api</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/authentication/" style="font-size: 10px;">authentication</a> <a href="/tags/autocomplete/" style="font-size: 10px;">autocomplete</a> <a href="/tags/carousel/" style="font-size: 10px;">carousel</a> <a href="/tags/categories/" style="font-size: 10px;">categories</a> <a href="/tags/checkbox/" style="font-size: 10px;">checkbox</a> <a href="/tags/cordova/" style="font-size: 14.29px;">cordova</a> <a href="/tags/csrf/" style="font-size: 10px;">csrf</a> <a href="/tags/css/" style="font-size: 11.43px;">css</a> <a href="/tags/date/" style="font-size: 10px;">date</a> <a href="/tags/device/" style="font-size: 10px;">device</a> <a href="/tags/directive/" style="font-size: 10px;">directive</a> <a href="/tags/distance/" style="font-size: 11.43px;">distance</a> <a href="/tags/dynamic/" style="font-size: 11.43px;">dynamic</a> <a href="/tags/element/" style="font-size: 10px;">element</a> <a href="/tags/escape/" style="font-size: 10px;">escape</a> <a href="/tags/express/" style="font-size: 10px;">express</a> <a href="/tags/filter/" style="font-size: 14.29px;">filter</a> <a href="/tags/form/" style="font-size: 10px;">form</a> <a href="/tags/git/" style="font-size: 11.43px;">git</a> <a href="/tags/gps/" style="font-size: 11.43px;">gps</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/handlebars/" style="font-size: 10px;">handlebars</a> <a href="/tags/header/" style="font-size: 10px;">header</a> <a href="/tags/hour/" style="font-size: 10px;">hour</a> <a href="/tags/html/" style="font-size: 11.43px;">html</a> <a href="/tags/id/" style="font-size: 10px;">id</a> <a href="/tags/image/" style="font-size: 11.43px;">image</a> <a href="/tags/inappbrowser/" style="font-size: 10px;">inappbrowser</a> <a href="/tags/infinite/" style="font-size: 11.43px;">infinite</a> <a href="/tags/input/" style="font-size: 10px;">input</a> <a href="/tags/ionic/" style="font-size: 18.57px;">ionic</a> <a href="/tags/ios/" style="font-size: 14.29px;">ios</a> <a href="/tags/javascript/" style="font-size: 11.43px;">javascript</a> <a href="/tags/jquery/" style="font-size: 15.71px;">jquery</a> <a href="/tags/json/" style="font-size: 10px;">json</a> <a href="/tags/jwt/" style="font-size: 10px;">jwt</a> <a href="/tags/lamp/" style="font-size: 11.43px;">lamp</a> <a href="/tags/laravel/" style="font-size: 17.14px;">laravel</a> <a href="/tags/latitude/" style="font-size: 11.43px;">latitude</a> <a href="/tags/linkedin/" style="font-size: 10px;">linkedin</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/longitude/" style="font-size: 11.43px;">longitude</a> <a href="/tags/magento/" style="font-size: 10px;">magento</a> <a href="/tags/mamp/" style="font-size: 11.43px;">mamp</a> <a href="/tags/mcrypt/" style="font-size: 10px;">mcrypt</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mysql/" style="font-size: 11.43px;">mysql</a> <a href="/tags/ng-repeat/" style="font-size: 10px;">ng-repeat</a> <a href="/tags/ngCordova/" style="font-size: 11.43px;">ngCordova</a> <a href="/tags/node/" style="font-size: 12.86px;">node</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/phonegap/" style="font-size: 12.86px;">phonegap</a> <a href="/tags/php/" style="font-size: 15.71px;">php</a> <a href="/tags/phpunit/" style="font-size: 10px;">phpunit</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/port/" style="font-size: 10px;">port</a> <a href="/tags/post/" style="font-size: 10px;">post</a> <a href="/tags/publish/" style="font-size: 10px;">publish</a> <a href="/tags/push-notification/" style="font-size: 10px;">push notification</a> <a href="/tags/radio/" style="font-size: 10px;">radio</a> <a href="/tags/scroll/" style="font-size: 11.43px;">scroll</a> <a href="/tags/select/" style="font-size: 11.43px;">select</a> <a href="/tags/sqlite/" style="font-size: 10px;">sqlite</a> <a href="/tags/stripe/" style="font-size: 11.43px;">stripe</a> <a href="/tags/submit/" style="font-size: 10px;">submit</a> <a href="/tags/subscribe/" style="font-size: 10px;">subscribe</a> <a href="/tags/text/" style="font-size: 10px;">text</a> <a href="/tags/time-ago/" style="font-size: 10px;">time ago</a> <a href="/tags/tinymce/" style="font-size: 10px;">tinymce</a> <a href="/tags/trim/" style="font-size: 10px;">trim</a> <a href="/tags/troubleshoot/" style="font-size: 10px;">troubleshoot</a> <a href="/tags/ubuntu/" style="font-size: 11.43px;">ubuntu</a> <a href="/tags/upload/" style="font-size: 10px;">upload</a> <a href="/tags/var/" style="font-size: 10px;">var</a> <a href="/tags/version-control/" style="font-size: 10px;">version control</a> <a href="/tags/virtualhost/" style="font-size: 10px;">virtualhost</a> <a href="/tags/www/" style="font-size: 10px;">www</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/04/03/php-vs-node/">When to use PHP vs NodeJS</a>
+          </li>
+        
+          <li>
+            <a href="/2015/07/10/stripe-get-Subscription-date/">Laravel stripe get subscription date</a>
+          </li>
+        
+          <li>
+            <a href="/2015/07/10/angular-stripe-example/">Angular stripe example</a>
+          </li>
+        
+          <li>
+            <a href="/2015/07/10/angular-onlynum/">Angular only number filter</a>
+          </li>
+        
+          <li>
+            <a href="/2015/07/10/phonegap-sqlite-tutorial/">phonegap sqlite tutorial in ionic 1</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Ryan Wong<br>
+      Reticulum Technology Inc.
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'ryanwongblog';
+  
+  var disqus_url = 'http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61913128-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://ryan-wong.github.io/sitemap.xml
+Host: ryan-wong.github.io

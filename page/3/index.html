@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="jepvrT6SGHhyn56tvWyqk5vcQYwvcG_emXRaiTE33so" />
+  <link rel="alternate" href="http://ryan-wong.github.io" hreflang="en" />
+  
+  <title>Ryan Wong Development Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This Blog will talk about technical topics I have encountered">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ryan Wong Development Blog">
+<meta property="og:url" content="http://ryan-wong.github.io/page/3/index.html">
+<meta property="og:site_name" content="Ryan Wong Development Blog">
+<meta property="og:description" content="This Blog will talk about technical topics I have encountered">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ryan Wong Development Blog">
+<meta name="twitter:description" content="This Blog will talk about technical topics I have encountered">
+  
+    <link rel="alternative" href="/atom.xml" title="Ryan Wong Development Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Ryan Wong Development Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Technical Topics I have encountered</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://ryan-wong.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-cant-return-value-write-context" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/06/28/cant-return-value-write-context/" class="article-date">
+  <time datetime="2015-06-28T17:31:07.000Z" itemprop="datePublished">2015-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/laravel/">laravel</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/28/cant-return-value-write-context/">Can&#39;t use function return value in write context laravel</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-06-28T17:31:07.000Z" itemprop="datePublished">Jun 28 2015 1:31 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>When you try to do the following:<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">empty</span>(Input::get(<span class="string">'blah'</span>))</span><br></pre></td></tr></table></figure></p>
+<p>It will crash if your using php &lt; version 5.5 .</p>
+<p>empty function cannot accept return value from a function.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/06/28/cant-return-value-write-context/" data-id="cimkvpt0q000iyt5gzno6cc7a" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/06/28/cant-return-value-write-context/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/input/">input</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/laravel/">laravel</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-cordova-inappbrowser-error" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/06/28/cordova-inappbrowser-error/" class="article-date">
+  <time datetime="2015-06-28T17:17:12.000Z" itemprop="datePublished">2015-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/ionic/">ionic</a>►<a class="article-category-link" href="/categories/ionic/ngCordova/">ngCordova</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/28/cordova-inappbrowser-error/">cordovaOauth Could not find InAppBrowser plugin error</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-06-28T17:17:12.000Z" itemprop="datePublished">Jun 28 2015 1:17 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>If you get the error “cordovaOauth Could not find InAppBrowser plugin error” then your cordova package is wrong.</p>
+<p>Do the following:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cordova plugin rm org.apache.cordova.inappbrowser</span><br><span class="line"></span><br><span class="line">cordova plugin add cordova-plugin-inappbrowser</span><br></pre></td></tr></table></figure></p>
+<p>Then go into ng-cordova.js and replace all instances of “org.apache.cordova.inappbrowser” with “cordova-plugin-inappbrowser”.</p>
+<p>Make sure you test on a real phone, simulator will fail since the livereload will mess it up.</p>
+<p>Hope this helps you out.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/06/28/cordova-inappbrowser-error/" data-id="cimkvpt10000ryt5g8x4oez9l" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/06/28/cordova-inappbrowser-error/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cordova/">cordova</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/inappbrowser/">inappbrowser</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-cordova-device-not-Found" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/06/28/cordova-device-not-Found/" class="article-date">
+  <time datetime="2015-06-28T17:09:37.000Z" itemprop="datePublished">2015-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/phonegap/">phonegap</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/28/cordova-device-not-Found/">Error initializing Cordova: Class not found</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-06-28T17:09:37.000Z" itemprop="datePublished">Jun 28 2015 1:09 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>When you get “Error initializing Cordova: Class not found” error, it means that the plugin is messed up, corrupted or duplicate. To fix this run</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cordova remove platform android</span><br><span class="line">cordova remove platform ios</span><br><span class="line">cordova add platform android</span><br><span class="line">cordova add platform ios</span><br></pre></td></tr></table></figure>
+<p>Hope this helps you out.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/06/28/cordova-device-not-Found/" data-id="cimkvpt0u000lyt5gx2m2q3aw" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/06/28/cordova-device-not-Found/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cordova/">cordova</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/device/">device</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/phonegap/">phonegap</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-laravel-boilerplate" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/05/16/laravel-boilerplate/" class="article-date">
+  <time datetime="2015-05-16T21:37:37.000Z" itemprop="datePublished">2015-05-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/laravel/">laravel</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/16/laravel-boilerplate/">Laravel 5 boilerplate</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-05-16T21:37:37.000Z" itemprop="datePublished">May 16 2015 5:37 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I made a git repo to start a laravel project <a href="https://github.com/ryan-wong/laravel-boilerplate.git" target="_blank" rel="external">https://github.com/ryan-wong/laravel-boilerplate.git</a>.</p>
+<p>Here’s a list of stuff to do to make it work. I’m assuming your running this in /var/www.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /var/www/project</span><br><span class="line">sudo npm install</span><br><span class="line">gulp watch</span><br><span class="line"></span><br><span class="line">composer update</span><br><span class="line"></span><br><span class="line">sudo adduser &lt;username&gt; www-data</span><br><span class="line">sudo chmod -R g+rwX /var/www</span><br><span class="line">sudo chown -R www-data:www-data /var/www</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/05/16/laravel-boilerplate/" data-id="cimkvpt540053yt5gznpfzhrv" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/05/16/laravel-boilerplate/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/laravel/">laravel</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-trouble-encounter-with-ionic-ios" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/05/16/trouble-encounter-with-ionic-ios/" class="article-date">
+  <time datetime="2015-05-16T21:29:28.000Z" itemprop="datePublished">2015-05-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/ionic/">ionic</a>►<a class="article-category-link" href="/categories/ionic/ios/">ios</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/16/trouble-encounter-with-ionic-ios/">Technical Issues I encountered using ionic with ios</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-05-16T21:29:28.000Z" itemprop="datePublished">May 16 2015 5:29 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I’m going list out all technical issues I found while developing ionic framework application for ios.</p>
+<p>1.What you see on the emulator is not exactly what you see in real ios device.</p>
+<p>2.Make sure to load divs that have ng-show last on the page because the device loads these elements slower resulting in them showing when they shouldn’t.</p>
+<p>3.When making your project in ios remember to get the following:</p>
+<ul>
+<li>provisional profile</li>
+<li>read device UDID</li>
+<li>create App ID</li>
+<li>rename your bundle in config.xml to match your xcode proj one.</li>
+</ul>
+<p>4.You cannot use safari to inspect a built ipa app running on the device. Good luck debugging.</p>
+<p>5.Really try not to use position absolute CSS on ios because the pixels are not same ratios.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/05/16/trouble-encounter-with-ionic-ios/" data-id="cimkvpt4z004xyt5gldeq0s91" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/05/16/trouble-encounter-with-ionic-ios/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ionic/">ionic</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-how-to-run-npm-without-sudo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/05/16/how-to-run-npm-without-sudo/" class="article-date">
+  <time datetime="2015-05-16T21:28:42.000Z" itemprop="datePublished">2015-05-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/npm/">npm</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/16/how-to-run-npm-without-sudo/">How to run npm without sudo</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-05-16T21:28:42.000Z" itemprop="datePublished">May 16 2015 5:28 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I found this script which will allow you run npm without being sudo.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span><br><span class="line"></span></span><br><span class="line"><span class="function"><span class="title">usage</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">cat &lt;&lt; EOF</span><br><span class="line">usage: <span class="variable">$0</span> [<span class="_">-d</span>] [-v]</span><br><span class="line"></span><br><span class="line">This script is intended to fix the common problem <span class="built_in">where</span> npm users</span><br><span class="line">are required to use sudo to install global packages.</span><br><span class="line"></span><br><span class="line">It will backup a list of your installed packages remove all but npm, </span><br><span class="line"><span class="keyword">then</span> create a <span class="built_in">local</span> directory, configure node to use this <span class="keyword">for</span> global installs</span><br><span class="line">whilst also fixing permissions on the .npm dir before, reinstalling the old packages.</span><br><span class="line"></span><br><span class="line">OPTIONS:</span><br><span class="line">   -h	Show this message</span><br><span class="line">   <span class="_">-d</span>	debug</span><br><span class="line">   -v	Verbose</span><br><span class="line">EOF</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">DEBUG=0</span><br><span class="line">VERBOSE=0</span><br><span class="line"><span class="keyword">while</span> <span class="built_in">getopts</span> <span class="string">"dv"</span> OPTION</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">     <span class="keyword">case</span> <span class="variable">$OPTION</span> <span class="keyword">in</span></span><br><span class="line">         d)</span><br><span class="line">             DEBUG=1</span><br><span class="line">             ;;</span><br><span class="line">         v)</span><br><span class="line">             VERBOSE=1</span><br><span class="line">             ;;</span><br><span class="line">         ?)</span><br><span class="line">             usage</span><br><span class="line">             <span class="built_in">exit</span></span><br><span class="line">             ;;</span><br><span class="line">     <span class="keyword">esac</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line">to_reinstall=<span class="string">'/tmp/npm-reinstall.txt'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ 1 = <span class="variable">$&#123;VERBOSE&#125;</span> ];	<span class="keyword">then</span></span><br><span class="line">	<span class="built_in">printf</span> <span class="string">"\nSaving list of existing global npm packages\n"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Get a list of global packages (not deps)</span></span><br><span class="line"><span class="comment">#except for the npm package</span></span><br><span class="line"><span class="comment">#save in a temporary file.</span></span><br><span class="line">npm -g list --depth=0 --parseable --long | cut <span class="_">-d</span>: <span class="_">-f</span>2 | grep -v <span class="string">'^npm@\|^$'</span> &gt;<span class="variable">$to_reinstall</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ 1 = <span class="variable">$&#123;VERBOSE&#125;</span> ];	<span class="keyword">then</span></span><br><span class="line">	<span class="built_in">printf</span> <span class="string">"\nRemoving existing packages temporarily - you might need your sudo password\n\n"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="comment">#List the file</span></span><br><span class="line"><span class="comment">#replace the version numbers</span></span><br><span class="line"><span class="comment">#remove the newlines</span></span><br><span class="line"><span class="comment">#and pass to npm uninstall</span></span><br><span class="line"></span><br><span class="line">uninstall=<span class="string">'sudo npm -g uninstall'</span></span><br><span class="line"><span class="keyword">if</span> [ 1 = <span class="variable">$&#123;DEBUG&#125;</span> ];	<span class="keyword">then</span></span><br><span class="line">	<span class="built_in">printf</span> <span class="string">"Won't uninstall\n\n"</span></span><br><span class="line">	uninstall=<span class="string">'echo'</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="_">-s</span> <span class="variable">$to_reinstall</span> ]; <span class="keyword">then</span></span><br><span class="line">	cat <span class="variable">$to_reinstall</span> | sed <span class="_">-e</span> <span class="string">'s/@.*//'</span> | xargs <span class="variable">$uninstall</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">defaultnpmdir=<span class="string">"<span class="variable">$&#123;HOME&#125;</span>/.npm-packages"</span></span><br><span class="line">npmdir=<span class="string">''</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">read</span> -p <span class="string">"Choose your install directory. Default (<span class="variable">$&#123;defaultnpmdir&#125;</span>) : "</span> npmdir</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ -z <span class="variable">$&#123;npmdir&#125;</span> ]; <span class="keyword">then</span></span><br><span class="line">    npmdir=<span class="variable">$&#123;defaultnpmdir&#125;</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="keyword">if</span> [ ! <span class="_">-d</span> <span class="variable">$&#123;npmdir&#125;</span> ]; <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"<span class="variable">$&#123;npmdir&#125;</span> is not a directory."</span></span><br><span class="line">        <span class="built_in">exit</span></span><br><span class="line">    <span class="keyword">fi</span></span><br><span class="line">    npmdir=<span class="string">"<span class="variable">$&#123;npmdir&#125;</span>/.npm-packages"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ 1 = <span class="variable">$&#123;VERBOSE&#125;</span> ];	<span class="keyword">then</span></span><br><span class="line">	<span class="built_in">printf</span> <span class="string">"\nMake a new directory <span class="variable">$&#123;npmdir&#125;</span> for our "</span>-g<span class="string">" packages\n"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ 0 = <span class="variable">$&#123;DEBUG&#125;</span> ];	<span class="keyword">then</span></span><br><span class="line">	mkdir -p <span class="variable">$&#123;npmdir&#125;</span></span><br><span class="line">	npm config <span class="built_in">set</span> prefix <span class="variable">$npmdir</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ 1 = <span class="variable">$&#123;VERBOSE&#125;</span> ];	<span class="keyword">then</span></span><br><span class="line">	<span class="built_in">printf</span> <span class="string">"\nFix permissions on the .npm directories\n"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">me=`whoami`</span><br><span class="line">sudo chown -R <span class="variable">$me</span> ~/.npm</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ 1 = <span class="variable">$&#123;VERBOSE&#125;</span> ];	<span class="keyword">then</span></span><br><span class="line">	<span class="built_in">printf</span> <span class="string">"\nReinstall packages\n\n"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#list the packages to install</span></span><br><span class="line"><span class="comment">#and pass to npm</span></span><br><span class="line">install=<span class="string">'npm -g install'</span></span><br><span class="line"><span class="keyword">if</span> [ 1 = <span class="variable">$&#123;DEBUG&#125;</span> ];	<span class="keyword">then</span></span><br><span class="line">	install=<span class="string">'echo'</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="_">-s</span> <span class="variable">$to_reinstall</span> ]; <span class="keyword">then</span></span><br><span class="line">	cat <span class="variable">$to_reinstall</span> | xargs <span class="variable">$install</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">envfix=<span class="string">'</span><br><span class="line">NPM_PACKAGES="%s"</span><br><span class="line">NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"</span><br><span class="line">PATH="$NPM_PACKAGES/bin:$PATH"</span><br><span class="line"># Unset manpath so we can inherit from /etc/manpath via the `manpath`</span><br><span class="line"># command</span><br><span class="line">unset MANPATH  # delete if you already modified MANPATH elsewhere in your config</span><br><span class="line">MANPATH="$NPM_PACKAGES/share/man:$(manpath)"</span><br><span class="line">'</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">fix_env</span></span>() &#123;</span><br><span class="line">	<span class="keyword">if</span> [ <span class="_">-f</span> <span class="string">"<span class="variable">$&#123;HOME&#125;</span>/.bashrc"</span> ];	<span class="keyword">then</span></span><br><span class="line">		<span class="built_in">printf</span> <span class="string">"<span class="variable">$&#123;envfix&#125;</span>"</span> <span class="variable">$&#123;npmdir&#125;</span> &gt;&gt; ~/.bashrc</span><br><span class="line">		<span class="built_in">printf</span> <span class="string">"\nDon't forget to run 'source ~/.bashrc'\n"</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line">	<span class="keyword">if</span> [ <span class="_">-f</span> <span class="string">"<span class="variable">$&#123;HOME&#125;</span>/.zshrc"</span> ];	<span class="keyword">then</span></span><br><span class="line">		<span class="built_in">printf</span> <span class="string">"<span class="variable">$&#123;envfix&#125;</span>"</span> <span class="variable">$&#123;npmdir&#125;</span> &gt;&gt; ~/.zshrc</span><br><span class="line">		<span class="built_in">printf</span> <span class="string">"\nDon't forget to run 'source ~/.zshrc'\n"</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">echo_env</span></span>() &#123;</span><br><span class="line">	<span class="built_in">printf</span> <span class="string">"\nYou may need to add the following to your ~/.bashrc / .zshrc file(s)\n\n"</span> </span><br><span class="line">	<span class="built_in">printf</span> <span class="string">"<span class="variable">$&#123;envfix&#125;</span>\n\n"</span> <span class="variable">$&#123;npmdir&#125;</span> </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span> <span class="string">"\n\n"</span></span><br><span class="line"><span class="built_in">read</span> -p <span class="string">"Do you wish to update your .bashrc/.zshrc file(s) with the paths and manpaths? [yn] "</span> yn</span><br><span class="line"><span class="keyword">case</span> <span class="variable">$yn</span> <span class="keyword">in</span></span><br><span class="line">    [Yy]* ) fix_env;;</span><br><span class="line">    [Nn]* ) <span class="built_in">echo</span>_env;;</span><br><span class="line">    * ) <span class="built_in">echo</span> <span class="string">"Please answer 'y' or 'n'."</span>;;</span><br><span class="line"><span class="keyword">esac</span></span><br><span class="line"></span><br><span class="line">rm <span class="variable">$to_reinstall</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span> <span class="string">"\nDone - current package list:\n\n"</span></span><br><span class="line">npm -g list -depth=0</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/05/16/how-to-run-npm-without-sudo/" data-id="cimkvpt1x001nyt5gyw3kyb05" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/05/16/how-to-run-npm-without-sudo/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/npm/">npm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/">ubuntu</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-setup-phpunit" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/05/16/setup-phpunit/" class="article-date">
+  <time datetime="2015-05-16T21:22:55.000Z" itemprop="datePublished">2015-05-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/phpunit/">phpunit</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/16/setup-phpunit/">Setup PHPunit on ubuntu14.04</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-05-16T21:22:55.000Z" itemprop="datePublished">May 16 2015 5:22 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Heres a list of steps I foun online for my reference.</p>
+<p>Download:<br>wget <a href="https://phar.phpunit.de/phpunit.phar" target="_blank" rel="external">https://phar.phpunit.de/phpunit.phar</a><br>Make executable:<br>chmod +x phpunit.phar<br>Move globally:<br>sudo mv phpunit.phar /usr/local/bin/phpunit<br>Test<br>phpunit –version</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/05/16/setup-phpunit/" data-id="cimkvpt4q004jyt5g1v5c9otz" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/05/16/setup-phpunit/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/phpunit/">phpunit</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-edit-file-www-folder" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/05/16/edit-file-www-folder/" class="article-date">
+  <time datetime="2015-05-16T17:25:59.000Z" itemprop="datePublished">2015-05-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/lamp/">lamp</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/16/edit-file-www-folder/">How to edit files in /var/www folder</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-05-16T17:25:59.000Z" itemprop="datePublished">May 16 2015 1:25 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>To edit files in your “/var/www” folder without making the directory 777 permission do the following:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo adduser &lt;username&gt; www-data</span><br><span class="line">sudo chown -R www-data:www-data /var/www</span><br><span class="line">sudo chmod -R g+rwX /var/www</span><br></pre></td></tr></table></figure>
+<p>Remember to logout and log back in to take effect.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/05/16/edit-file-www-folder/" data-id="cimkvpt1e0012yt5gxnl8qyh8" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/05/16/edit-file-www-folder/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lamp/">lamp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/var/">var</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/www/">www</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-setup-mongo-ubuntu" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/05/16/setup-mongo-ubuntu/" class="article-date">
+  <time datetime="2015-05-16T04:02:40.000Z" itemprop="datePublished">2015-05-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/mongodb/">mongodb</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/16/setup-mongo-ubuntu/">Setup Mongodb on ubunut14.04 32 bit</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-05-16T04:02:40.000Z" itemprop="datePublished">May 16 2015 12:02 am</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>MongoDb 3.0 doesn’t support 32 bit systems so you will need to use version 2.4</p>
+<p>Here are the steps:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"deb http://repo.mongodb.org/apt/ubuntu "</span>$(lsb_release -sc)<span class="string">"/mongodb-org/3.0 multiverse"</span> | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list</span><br><span class="line"></span><br><span class="line">sudo apt-get update</span><br><span class="line"></span><br><span class="line">sudo apt-get install --force-yes mongodb</span><br></pre></td></tr></table></figure>
+<p>Some UI for mongodb I found were:</p>
+<ul>
+<li><a href="http://genghisapp.com/" target="_blank" rel="external">http://genghisapp.com/</a></li>
+<li><a href="http://www.phpmoadmin.com/" target="_blank" rel="external">http://www.phpmoadmin.com/</a></li>
+<li><a href="http://www.phpmongodb.org/" target="_blank" rel="external">http://www.phpmongodb.org/</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/05/16/setup-mongo-ubuntu/" data-id="cimkvpt4n004eyt5g8yqp0f0p" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/05/16/setup-mongo-ubuntu/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mongodb/">mongodb</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-setup-phpmyadmin-ubuntu" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/05/15/setup-phpmyadmin-ubuntu/" class="article-date">
+  <time datetime="2015-05-16T03:58:53.000Z" itemprop="datePublished">2015-05-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/php/">php</a>►<a class="article-category-link" href="/categories/php/mysql/">mysql</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/15/setup-phpmyadmin-ubuntu/">Setup PHPMyAdmin on ubuntu</a>
+    </h1>
+  
+
+        <div class="author-time">By: <span class="author">Ryan Wong</span> at <time datetime="2015-05-16T03:58:53.000Z" itemprop="datePublished">May 15 2015 11:58 pm</time></div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Heres steps to install phpmyadmin on ubuntu.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install phpmyadmin apache2-utils</span><br><span class="line"></span><br><span class="line">sudo nano /etc/apache2/apache2.conf</span><br><span class="line"><span class="comment">#Include at bottom</span></span><br><span class="line">Include /etc/phpmyadmin/apache.conf</span><br><span class="line"></span><br><span class="line">sudo service apache2 restart</span><br><span class="line"></span><br><span class="line">sudo nano /etc/phpmyadmin/apache.conf </span><br><span class="line"></span><br><span class="line">&lt;Directory /usr/share/phpmyadmin&gt;</span><br><span class="line">        Options FollowSymLinks</span><br><span class="line">        DirectoryIndex index.php</span><br><span class="line">        AllowOverride All</span><br><span class="line">        [...]</span><br><span class="line"></span><br><span class="line">sudo nano /usr/share/phpmyadmin/.htaccess</span><br><span class="line">AuthType Basic</span><br><span class="line">AuthName <span class="string">"Restricted Files"</span></span><br><span class="line">AuthUserFile /etc/apache2/.phpmyadmin.htpasswd</span><br><span class="line">Require valid-user</span><br><span class="line"></span><br><span class="line"><span class="comment">#add users</span></span><br><span class="line">sudo htpasswd -c /etc/apache2/.phpmyadmin.htpasswd username</span><br><span class="line"></span><br><span class="line">sudo service apache2 restart</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ryan-wong.github.io/2015/05/15/setup-phpmyadmin-ubuntu/" data-id="cimkvpt4p004hyt5gnei1vohl" class="article-share-link">Share</a>
+      
+        <a href="http://ryan-wong.github.io/2015/05/15/setup-phpmyadmin-ubuntu/" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
+    </nav>
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/">angular</a><span class="category-list-count">14</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/csrf/">csrf</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/directive/">directive</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/directive/html/">html</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/">filter</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/escape-html/">escape html</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/time-ago/">time ago</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/filter/trim/">trim</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/form/">form</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/graph/">graph</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/ng-repeat/">ng-repeat</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/publish/">publish</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/angular/publish/subscribe/">subscribe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/select/">select</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/angular/stripe/">stripe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/authentication/">authentication</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/css/">css</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/css/image/">image</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/express/">express</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/express/api/">api</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/handlebars/">handlebars</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/">ionic</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/android/">android</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/carousel/">carousel</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/infinite-scroll/">infinite scroll</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ios/">ios</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ngCordova/">ngCordova</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/ngCordova/inappbrowser/">inappbrowser</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/oauth/">oauth</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/oauth/linkedin/">linkedin</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ionic/sqlite/">sqlite</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/distance/">distance</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/hour/">hour</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/">jquery</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/ajax/">ajax</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/autocomplete/">autocomplete</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/checkbox/">checkbox</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/form/">form</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/select/">select</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/lamp/">lamp</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/">laravel</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/push-notification/">push notification</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/stripe/">stripe</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/magento/">magento</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/magento/categories/">categories</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mamp/">mamp</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/mamp/virtualhost/">virtualhost</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mobile/">mobile</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mongodb/">mongodb</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/distance/">distance</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/node/">node</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/npm/">npm</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/phonegap/">phonegap</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/">php</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/php/json/">json</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/mysql/">mysql</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/phpunit/">phpunit</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tinymce/">tinymce</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ubuntu/">ubuntu</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angular/">angular</a><span class="tag-list-count">18</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/angular-js/">angular js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/apache/">apache</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/array/">array</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/authentication/">authentication</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/autocomplete/">autocomplete</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carousel/">carousel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/categories/">categories</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/checkbox/">checkbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova/">cordova</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/csrf/">csrf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/date/">date</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/device/">device</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/directive/">directive</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distance/">distance</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dynamic/">dynamic</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/element/">element</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/escape/">escape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/express/">express</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/filter/">filter</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/form/">form</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gps/">gps</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graph/">graph</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/handlebars/">handlebars</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/header/">header</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hour/">hour</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/id/">id</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image/">image</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inappbrowser/">inappbrowser</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/infinite/">infinite</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/input/">input</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ionic/">ionic</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jquery</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/json/">json</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jwt/">jwt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lamp/">lamp</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/laravel/">laravel</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latitude/">latitude</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linkedin/">linkedin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/longitude/">longitude</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/magento/">magento</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mamp/">mamp</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mcrypt/">mcrypt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ng-repeat/">ng-repeat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ngCordova/">ngCordova</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/phonegap/">phonegap</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/phpunit/">phpunit</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plugin/">plugin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/port/">port</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/post/">post</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/publish/">publish</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/push-notification/">push notification</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/radio/">radio</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scroll/">scroll</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/select/">select</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sqlite/">sqlite</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stripe/">stripe</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/submit/">submit</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/subscribe/">subscribe</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/text/">text</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/time-ago/">time ago</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tinymce/">tinymce</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/trim/">trim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/troubleshoot/">troubleshoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/">ubuntu</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/upload/">upload</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/var/">var</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/version-control/">version control</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/virtualhost/">virtualhost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/www/">www</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/angular/" style="font-size: 20px;">angular</a> <a href="/tags/angular-js/" style="font-size: 10px;">angular js</a> <a href="/tags/apache/" style="font-size: 11.43px;">apache</a> <a href="/tags/api/" style="font-size: 10px;">api</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/authentication/" style="font-size: 10px;">authentication</a> <a href="/tags/autocomplete/" style="font-size: 10px;">autocomplete</a> <a href="/tags/carousel/" style="font-size: 10px;">carousel</a> <a href="/tags/categories/" style="font-size: 10px;">categories</a> <a href="/tags/checkbox/" style="font-size: 10px;">checkbox</a> <a href="/tags/cordova/" style="font-size: 14.29px;">cordova</a> <a href="/tags/csrf/" style="font-size: 10px;">csrf</a> <a href="/tags/css/" style="font-size: 11.43px;">css</a> <a href="/tags/date/" style="font-size: 10px;">date</a> <a href="/tags/device/" style="font-size: 10px;">device</a> <a href="/tags/directive/" style="font-size: 10px;">directive</a> <a href="/tags/distance/" style="font-size: 11.43px;">distance</a> <a href="/tags/dynamic/" style="font-size: 11.43px;">dynamic</a> <a href="/tags/element/" style="font-size: 10px;">element</a> <a href="/tags/escape/" style="font-size: 10px;">escape</a> <a href="/tags/express/" style="font-size: 10px;">express</a> <a href="/tags/filter/" style="font-size: 14.29px;">filter</a> <a href="/tags/form/" style="font-size: 10px;">form</a> <a href="/tags/git/" style="font-size: 11.43px;">git</a> <a href="/tags/gps/" style="font-size: 11.43px;">gps</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/handlebars/" style="font-size: 10px;">handlebars</a> <a href="/tags/header/" style="font-size: 10px;">header</a> <a href="/tags/hour/" style="font-size: 10px;">hour</a> <a href="/tags/html/" style="font-size: 11.43px;">html</a> <a href="/tags/id/" style="font-size: 10px;">id</a> <a href="/tags/image/" style="font-size: 11.43px;">image</a> <a href="/tags/inappbrowser/" style="font-size: 10px;">inappbrowser</a> <a href="/tags/infinite/" style="font-size: 11.43px;">infinite</a> <a href="/tags/input/" style="font-size: 10px;">input</a> <a href="/tags/ionic/" style="font-size: 18.57px;">ionic</a> <a href="/tags/ios/" style="font-size: 14.29px;">ios</a> <a href="/tags/javascript/" style="font-size: 11.43px;">javascript</a> <a href="/tags/jquery/" style="font-size: 15.71px;">jquery</a> <a href="/tags/json/" style="font-size: 10px;">json</a> <a href="/tags/jwt/" style="font-size: 10px;">jwt</a> <a href="/tags/lamp/" style="font-size: 11.43px;">lamp</a> <a href="/tags/laravel/" style="font-size: 17.14px;">laravel</a> <a href="/tags/latitude/" style="font-size: 11.43px;">latitude</a> <a href="/tags/linkedin/" style="font-size: 10px;">linkedin</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/longitude/" style="font-size: 11.43px;">longitude</a> <a href="/tags/magento/" style="font-size: 10px;">magento</a> <a href="/tags/mamp/" style="font-size: 11.43px;">mamp</a> <a href="/tags/mcrypt/" style="font-size: 10px;">mcrypt</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mysql/" style="font-size: 11.43px;">mysql</a> <a href="/tags/ng-repeat/" style="font-size: 10px;">ng-repeat</a> <a href="/tags/ngCordova/" style="font-size: 11.43px;">ngCordova</a> <a href="/tags/node/" style="font-size: 12.86px;">node</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/phonegap/" style="font-size: 12.86px;">phonegap</a> <a href="/tags/php/" style="font-size: 15.71px;">php</a> <a href="/tags/phpunit/" style="font-size: 10px;">phpunit</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/port/" style="font-size: 10px;">port</a> <a href="/tags/post/" style="font-size: 10px;">post</a> <a href="/tags/publish/" style="font-size: 10px;">publish</a> <a href="/tags/push-notification/" style="font-size: 10px;">push notification</a> <a href="/tags/radio/" style="font-size: 10px;">radio</a> <a href="/tags/scroll/" style="font-size: 11.43px;">scroll</a> <a href="/tags/select/" style="font-size: 11.43px;">select</a> <a href="/tags/sqlite/" style="font-size: 10px;">sqlite</a> <a href="/tags/stripe/" style="font-size: 11.43px;">stripe</a> <a href="/tags/submit/" style="font-size: 10px;">submit</a> <a href="/tags/subscribe/" style="font-size: 10px;">subscribe</a> <a href="/tags/text/" style="font-size: 10px;">text</a> <a href="/tags/time-ago/" style="font-size: 10px;">time ago</a> <a href="/tags/tinymce/" style="font-size: 10px;">tinymce</a> <a href="/tags/trim/" style="font-size: 10px;">trim</a> <a href="/tags/troubleshoot/" style="font-size: 10px;">troubleshoot</a> <a href="/tags/ubuntu/" style="font-size: 11.43px;">ubuntu</a> <a href="/tags/upload/" style="font-size: 10px;">upload</a> <a href="/tags/var/" style="font-size: 10px;">var</a> <a href="/tags/version-control/" style="font-size: 10px;">version control</a> <a href="/tags/virtualhost/" style="font-size: 10px;">virtualhost</a> <a href="/tags/www/" style="font-size: 10px;">www</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/04/03/php-vs-node/">When to use PHP vs NodeJS</a>
+          </li>
+        
+          <li>
+            <a href="/2015/07/10/stripe-get-Subscription-date/">Laravel stripe get subscription date</a>
+          </li>
+        
+          <li>
+            <a href="/2015/07/10/angular-stripe-example/">Angular stripe example</a>
+          </li>
+        
+          <li>
+            <a href="/2015/07/10/angular-onlynum/">Angular only number filter</a>
+          </li>
+        
+          <li>
+            <a href="/2015/07/10/phonegap-sqlite-tutorial/">phonegap sqlite tutorial in ionic 1</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Ryan Wong<br>
+      Reticulum Technology Inc.
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'ryanwongblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61913128-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </div>
+</body>
+</html>
