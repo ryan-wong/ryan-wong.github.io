@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ryan-wong.github.io/2016/03/03/angular-file-structure/</loc>
+    
+    <lastmod>2016-04-03T18:45:53.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ryan-wong.github.io/2016/04/03/php-vs-node/</loc>
     
     <lastmod>2016-04-03T18:05:50.000Z</lastmod>
@@ -93,7 +100,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/04/15/javascript-fixhour/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll-calendar/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -128,14 +135,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/15/alias-path-linux/</loc>
-    
-    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ryan-wong.github.io/2015/03/15/handlebar-loading-dynamic-elements/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -149,14 +149,14 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/01/angular-passing-tags/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/01/virtual-host-project/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/04/21/how-to-add-category-tomagento-homepage/</loc>
+    <loc>http://ryan-wong.github.io/2015/03/15/handlebar-loading-dynamic-elements/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -164,6 +164,13 @@
   
   <url>
     <loc>http://ryan-wong.github.io/2015/05/16/how-to-run-npm-without-sudo/</loc>
+    
+    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ryan-wong.github.io/2015/04/21/how-to-add-category-tomagento-homepage/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -198,21 +205,14 @@
   </url>
   
   <url>
+    <loc>http://ryan-wong.github.io/2015/05/01/angular-passing-tags/</loc>
+    
+    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ryan-wong.github.io/2015/05/12/ionic-working-with-android/</loc>
-    
-    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll-calendar/</loc>
-    
-    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ryan-wong.github.io/2015/04/15/javascript-calculate-distance/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -226,7 +226,14 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/05/angular-trim/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/15/alias-path-linux/</loc>
+    
+    <lastmod>2016-04-03T15:29:22.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ryan-wong.github.io/2015/04/15/javascript-fixhour/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -310,14 +317,14 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/cant-return-value-write-context/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/12/ngCordova-inappbrowserissue/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/12/ngCordova-inappbrowserissue/</loc>
+    <loc>http://ryan-wong.github.io/2015/05/05/angular-trim/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -352,7 +359,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/cordova-device-not-Found/</loc>
+    <loc>http://ryan-wong.github.io/2015/06/28/cant-return-value-write-context/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -415,14 +422,14 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/06/28/cordova-inappbrowser-error/</loc>
+    <loc>http://ryan-wong.github.io/2015/06/28/cordova-device-not-Found/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/01/angular-ionic-infinite-sroll/</loc>
+    <loc>http://ryan-wong.github.io/2015/06/28/cordova-inappbrowser-error/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
@@ -443,7 +450,7 @@
   </url>
   
   <url>
-    <loc>http://ryan-wong.github.io/2015/05/01/virtual-host-project/</loc>
+    <loc>http://ryan-wong.github.io/2015/04/15/javascript-calculate-distance/</loc>
     
     <lastmod>2016-04-03T15:29:22.000Z</lastmod>
     
